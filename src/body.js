@@ -42,16 +42,12 @@ const Body = () => {
   };
 
   const closeMenu = () => {
-    const navButton = document.querySelectorAll("nav");
     const hamMenu = document.querySelector(".hamburger-menu");
     const offScreenMenu = document.querySelector(".off-screen-menu");
     const container = document.querySelector("section");
-    navButton.forEach((nav) => {
-      nav.classList.toggle("active");
-      hamMenu.classList.remove("active");
-      offScreenMenu.classList.remove("active");
-      container.classList.remove("active");
-    });
+    hamMenu.classList.remove("active");
+    offScreenMenu.classList.remove("active");
+    container.classList.remove("active");
   };
 
   return (
@@ -113,8 +109,8 @@ const Body = () => {
         </ul>
       </div>
       <div className="container">
-        <div className="second-wrapper" id="about">
-          <div id="Home" className="left-part">
+        <div id="Home" className="second-wrapper">
+          <div className="left-part">
             <h1>
               Sushi Bliss, Every Roll a Flavorful <span>Kiss</span>
             </h1>
@@ -261,12 +257,12 @@ const Body = () => {
             </div>
           </div>
         </div>
-        <div className="fifth_wrapper">
+        <div id="About" className="fifth_wrapper">
           <div className="The_chef">
             <img className="Chef" src={theChef} alt="The Chef" />
             <img className="best-chef" src={ourBestChef} alt="Our Best Chef" />
           </div>
-          <div id="About" className="Right_About">
+          <div className="Right_About">
             <h4>TESTIMONIALS</h4>
             <h1>What Our Customers Say About Us</h1>
             <h5>
@@ -290,8 +286,8 @@ const Body = () => {
             </div>
           </div>
         </div>
-        <div id="Services" className="sixth-wrapper">
-          <div className="left_story">
+        <div className="sixth-wrapper">
+          <div id="Services" className="left_story">
             <h5>OUR STORY & SERVICES</h5>
             <h1>Our Culinary Journey And Services</h1>
             <h4>

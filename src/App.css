@@ -47,16 +47,14 @@ nav {
 .bar3 {
   top: 75%;
 }
-.hamburger-menu.active .bar1,
-.nav.active {
+.hamburger-menu.active .bar1 {
   transform: translate(-50%, -50%) rotate(-315deg);
   top: 50%;
 }
 .hamburger-menu.active .bar2 {
   opacity: 0;
 }
-.hamburger-menu.active .bar3,
-.nav.active {
+.hamburger-menu.active .bar3 {
   transform: translate(-50%, -50%) rotate(-225deg);
   top: 50%;
 }
@@ -73,8 +71,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.off-screen-menu.active,
-.nav.active {
+.off-screen-menu.active {
   right: 0;
 }
 .secondlink {
