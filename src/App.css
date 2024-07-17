@@ -216,10 +216,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.Play_pic:hover {
-  transform: rotate(360deg);
-  transition: ease-in-out 0.9s;
-}
 .Play_pic img {
   width: 80px;
   height: 80px;
@@ -303,10 +299,6 @@ nav {
   padding: 2.7rem;
   border-radius: 2rem;
   flex-grow: 1;
-}
-.all_sushi:hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.9s;
 }
 .all_sushi h5 {
   font-size: 30px;
@@ -397,10 +389,6 @@ nav {
   position: relative;
   flex-grow: 1;
 }
-.sushi_and_price:hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.9s;
-}
 .sushi_picture {
   display: flex;
   flex-direction: column;
@@ -478,10 +466,6 @@ nav {
 }
 .The_chef {
   position: relative;
-}
-.The_chef:hover {
-  transform: scale(1.1);
-  transition: ease-out 0.9s;
 }
 .best-chef {
   position: absolute;
@@ -598,13 +582,13 @@ nav {
   font-size: 23px;
   font-weight: 600;
   transform: translateX(0px);
-  animation-name: colorchanger;
+  animation-name: colorChanger;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 99999999999;
   animation-delay: 1s;
 }
-@keyframes colorchanger {
+@keyframes colorChanger {
   0% {
     transform: translateX(0px);
   }
@@ -641,10 +625,6 @@ nav {
   align-items: center;
   border-radius: 2rem;
   gap: 1rem;
-}
-.box:hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.8s;
 }
 .box h5 {
   font-family: "inter", sans-serif;
@@ -875,7 +855,7 @@ nav {
     transform: scale(1.1);
     transition: ease-out 0.9s;
   }
-  @keyframes colorchanger {
+  @keyframes colorChanger {
     50% {
       display: none;
     }
@@ -963,15 +943,6 @@ nav {
   }
   .box {
     padding: 4rem;
-  }
-  .left_story p:hover {
-    transform: scale(1.1);
-    transition: ease-out 0.9s;
-  }
-  @keyframes colorchanger {
-    50% {
-      display: none;
-    }
   }
 }
 @media screen and (max-width: 524px) {
