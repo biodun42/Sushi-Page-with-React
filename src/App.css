@@ -5,13 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 .container {
   padding: 2rem;
 }
-section.active{
+section.active {
   position: fixed;
 }
 /* THIS IS THE NAVBAR WITH THE TOP SUSHI LOGO AND THE CONTACT BUTTON */
@@ -87,16 +87,16 @@ nav {
   list-style-type: none;
   color: #000;
 }
-.secondlink li :hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.3s;
-  text-decoration: underline;
-}
 .secondlink li a {
   text-decoration: none;
   color: #000;
   font-size: 26px;
   font-family: "inter", sans-serif;
+}
+.secondlink li a:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  text-decoration: underline;
 }
 .secondlink li img {
   width: 30px;
@@ -114,17 +114,17 @@ nav {
   list-style-type: none;
   color: #000;
 }
-.firstlink li :hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.3s;
-  text-decoration: underline;
-}
 .firstlink li a {
   text-decoration: none;
   color: #000;
   font-size: 26px;
   font-family: "inter", sans-serif;
   cursor: pointer;
+}
+.firstlink li a:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  text-decoration: underline;
 }
 .firstlink li img {
   width: 30px;
@@ -710,11 +710,12 @@ nav {
 /* THIS IS THE SOCIAL MEDIA LOGOS AND THE COPYRIGHT */
 
 .footer {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem;
   margin-top: 9rem;
 }
 .apps {
@@ -723,6 +724,7 @@ nav {
   gap: 1rem;
 }
 .Copyright {
+  text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 500;
@@ -882,7 +884,8 @@ nav {
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 892px) {
   .firstlink li a {
@@ -1286,16 +1289,16 @@ nav {
 }
 @media screen and (max-width: 407px) {
   .container {
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+  nav{
+    padding: 0.5rem;
   }
   .all_sushi {
     padding: 4rem;
   }
 }
 @media screen and (max-width: 374px) {
-  .container {
-    padding: 1rem;
-  }
   .below_sushi img {
     width: 230px;
   }
